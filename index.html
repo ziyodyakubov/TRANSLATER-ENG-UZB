@@ -4,27 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON LINK -->
+    <link rel="icon" href="./assets/images/favicon.svg">
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./style.css">
-    <title>Translater | Eng-Uzb</title>
+
+    <!-- BOXICON LINK -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Translater</title>
 </head>
 
-<body>
-    <header>
-        
+<body class="bg-[#F1F4F6]">
+    <header class="py-[20px] bg-[#01756C] shadow-xl">
+        <div class="container">
+            <nav class="flex items-center justify-between">
+                <a href="#"><img src="./assets/images/main-logo.svg" alt="main-logo"></a>
+
+                <div class="flex items-center gap-[80px]">
+                    <button class="w-[96px] text-[18px] text-[#fff] font-[400]">ENG-UZB</button>
+                    <button class="w-[96px] text-[18px] text-[#fff] font-[400]">RUS-UZB</button>
+
+                    <p class="text-[18px] text-[#fff] font-[400]">Articles</p>
+                    <p class="text-[18px] text-[#fff] font-[400]">Grammar</p>
+                    <p class="text-[18px] text-[#fff] font-[400]">About us</p>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="h-[704px]">
+        <section id="section-1" class="pt-[60px]">
+            <div class="container">
+                <div class="search-wrapper ml-[50px] flex items-center mb-[40px]">
+                    <button
+                        class="z-20 py-[20px] px-[30px] bg-[#01756C] duration-200 text-[#fff] rounded-[100px] w-[174px] relative left-[230px]">
+                        ENG-UZB
+                    </button>
+
+                    <div class="search-wrapper flex items-center gap-[30px]">
+                        <i class='cursor-pointer z-20 bx bx-search relative left-[240px] text-[24px] text-[#666]'></i>
+                        <input type="search" id="search"
+                            class="shadow-lg py-[23px] text-[#666] pl-[224px] pr-[20px] z-10 bg-[#fff] w-[847px] rounded-[100px] outline-none"
+                            placeholder="Search words here...">
+                    </div>
+                </div>
+
+                <div class="search-wrapper-res">
+
+                </div>
+                <!-- <div class="ml-[440px] shadow-xl relative bottom-[20px] search-result h-[200px] w-[660px] rounded-[20px] bg-[#Fff]"></div> -->
+            </div>
+        </section>
 
     </main>
 
-    <footer>
-
+    <footer class="bg-[#01756C] py-[40px] shadow-xl">
+        <div class="container">
+            <div class="footer-wrapper flex justify-between items-center">
+                <p class="text-[#FFF] font-[400] text-[18px]">Leksika.uz - 2022-2023</p>
+                <div class="flex items-center gap-[20px]">
+                    <a href="#"><img src="./assets/images/telegram.svg" alt="telegram"></a>
+                    <a href="#"><img src="./assets/images/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="./assets/images/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="./assets/images/youtube.svg" alt="youtube"></a>
+                    <a href="#"><img src="./assets/images/twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 <!-- TAILWIND LINK -->
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- MY JS -->
-<script src="./index.js"></script>
 
 </html>
